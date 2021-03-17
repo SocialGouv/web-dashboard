@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 13:12:40
+Generated on Wed, 17 Mar 2021 15:00:16
 
 
 ## Summary of Alerts
@@ -1242,7 +1242,7 @@ Instances: 11
   
   
   
-* URL: [https://code.travail.gouv.fr/themes/temps-de-travail](https://code.travail.gouv.fr/themes/temps-de-travail)
+* URL: [https://code.travail.gouv.fr/themes/licenciement-droits-des-salaries-et-procedures](https://code.travail.gouv.fr/themes/licenciement-droits-des-salaries-et-procedures)
   
   
   * Method: `GET`
@@ -1253,7 +1253,7 @@ Instances: 11
   
   
   
-* URL: [https://code.travail.gouv.fr/themes/licenciement-droits-des-salaries-et-procedures](https://code.travail.gouv.fr/themes/licenciement-droits-des-salaries-et-procedures)
+* URL: [https://code.travail.gouv.fr/themes/salaire-et-remuneration](https://code.travail.gouv.fr/themes/salaire-et-remuneration)
   
   
   * Method: `GET`
@@ -1691,17 +1691,6 @@ Instances: 11
   
   
   
-* URL: [https://code.travail.gouv.fr/themes/temps-de-travail](https://code.travail.gouv.fr/themes/temps-de-travail)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `d9c8-HoTCN8K0pY4w2Lpq3KmfKfUPHYY`
-  
-  
-  
-  
 * URL: [https://code.travail.gouv.fr/outils](https://code.travail.gouv.fr/outils)
   
   
@@ -1741,7 +1730,18 @@ Instances: 11
   * Method: `GET`
   
   
-  * Evidence: `e498-YGlGJinth55DjPdwThdSa6S+Zzs`
+  * Evidence: `e498-TVtbx6G+RjvXYNCYU/2aEyzfzVE`
+  
+  
+  
+  
+* URL: [https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail](https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `cf1b-RIJvKtnEDwvx9FkCXsj7tPdg33g`
   
   
   
@@ -1779,6 +1779,17 @@ Instances: 11
   
   
   
+* URL: [https://code.travail.gouv.fr/themes/temps-de-travail](https://code.travail.gouv.fr/themes/temps-de-travail)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `d9c8-ExEW9qDRGpwISHjmomxN15dKXic`
+  
+  
+  
+  
 * URL: [https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux](https://code.travail.gouv.fr/contribution/les-conges-pour-evenements-familiaux)
   
   
@@ -1786,17 +1797,6 @@ Instances: 11
   
   
   * Evidence: `Footer__OverflowWrapper-sc-113rfy3-0`
-  
-  
-  
-  
-* URL: [https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail](https://code.travail.gouv.fr/themes/embauche-et-contrat-de-travail)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `cf1b-X57z+MlcJmU+136iAsMWfW3dj04`
   
   
   
@@ -1818,7 +1818,7 @@ Instances: 11
 <p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>
   
 ### Other information
-<p>w�<�z\x0013\x0008�</p><p>Җ8�b�r�|��<v\x0018</p>
+<p>\x0016�-z��:��~Z0Z������ϵ�z���</p>
   
 ### Reference
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage
