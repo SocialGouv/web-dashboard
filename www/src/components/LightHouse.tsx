@@ -28,16 +28,16 @@ export const LightHouse: React.FC<LightHouseProps> = ({ data }) => {
         info="Informations collectées par l'outil Google LightHouse"
         url={url}
       >
-        {data.map((row: any) => {
+        {data.map((row: any, i: number) => {
           return (
-            <Row key={row.url}>
+            <Row key={row.url + i}>
               {Object.keys(row.result.categories)
                 .filter((key) => key !== "pwa")
                 .map((key: any, i: number) => {
                   const category = row.result.categories[key] as Category;
                   return (
                     <Col
-                      key={category.title}
+                      key={category.title + i}
                       xs={12}
                       md={6}
                       lg={3}

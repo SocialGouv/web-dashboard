@@ -21,9 +21,9 @@ export const SSL: React.FC<SSLProps> = ({ data }) => {
   return (
     url && (
       <Panel title="SSL" info="Informations collectées via SSLlabs" url={url}>
-        {data.map((row: any) => {
+        {data.map((row: any, i: number) => {
           return (
-            <React.Fragment key={row.url}>
+            <React.Fragment key={row.url + i}>
               <Row>
                 <Col>
                   {row.result.endpoints.map((endpoint: any, i: number) => {

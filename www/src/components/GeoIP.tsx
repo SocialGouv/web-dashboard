@@ -25,15 +25,15 @@ export const GeoIP: React.FC<GeoIPProps> = ({ data }) => {
           </thead>
           <tbody>
             {data.flatMap(
-              (row: any) =>
+              (row: any, i: number) =>
                 row.result &&
-                row.result.map((host: any, i: number) => {
+                row.result.map((host: any, j: number) => {
                   const Flag =
                     (host.geoip.country &&
                       Flags[host.geoip.country.iso_code]) ||
                     null;
                   return (
-                    <tr key={host.hostname}>
+                    <tr key={host.hostname + "-" + i + "-" + j}>
                       <td className="text-center">
                         {Flag && (
                           <Flag
