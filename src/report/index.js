@@ -14,7 +14,7 @@ const requireJson = (resultsPath, filename) => {
 const smallUrl = (url) =>
   url
     .toLowerCase()
-    .replace(/^https?:\/\/(www\.)?/, "")
+    .replace(/^https?:\/\/?/, "")
     .replace(/\/$/, "");
 
 const isSameUrl = (url1, url2) => smallUrl(url1) === smallUrl(url2);
