@@ -105,9 +105,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
                 : cookies > 0
                 ? "B"
                 : "A";
-            const nuclei = report[key].nuclei.filter(
-              (n: any) => n.info.severity !== "info"
-            ).length;
+            const nuclei = report[key].nuclei.length;
             const nucleiGrade = report[key].nuclei.filter(
               (n: any) =>
                 n.info.severity === "critical" || n.info.severity === "high"
