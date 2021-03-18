@@ -1,0 +1,7 @@
+Error: getaddrinfo ENOTFOUND oasc-eu1.247realmedia.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'oasc-eu1.247realmedia.com'
+}
