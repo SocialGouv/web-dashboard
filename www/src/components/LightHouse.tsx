@@ -15,7 +15,7 @@ type LightHouseProps = { data: any };
 export const LightHouse: React.FC<LightHouseProps> = ({ data }) => {
   const url =
     (data.length &&
-      `/web-dashboard/report/${data[0].filename.replace(
+      `/dnum-dashboard/report/${data[0].filename.replace(
         /\.json$/,
         ".html"
       )}`) ||
