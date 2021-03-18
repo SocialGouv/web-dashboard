@@ -28,7 +28,10 @@ export const GeoIP: React.FC<GeoIPProps> = ({ data }) => {
               (row: any) =>
                 row.result &&
                 row.result.map((host: any, i: number) => {
-                  const Flag = Flags[host.geoip.country.iso_code];
+                  const Flag =
+                    (host.geoip.country &&
+                      Flags[host.geoip.country.iso_code]) ||
+                    null;
                   return (
                     <tr key={host.hostname}>
                       <td className="text-center">
@@ -45,7 +48,10 @@ export const GeoIP: React.FC<GeoIPProps> = ({ data }) => {
                         {(host.geoip.city && host.geoip.city.names.fr) || "?"}
                       </td>
 
-                      <td>{host.geoip.country.names.fr}</td>
+                      <td>
+                        {(host.geoip.country && host.geoip.country.names.fr) ||
+                          "?"}
+                      </td>
                     </tr>
                   );
                 })
