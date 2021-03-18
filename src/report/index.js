@@ -56,12 +56,24 @@ const exportData = async (resultsPath) => {
           trackers: allData.trackers.filter((result) =>
             isSameUrl(currentUrl, result.url)
           ),
-          nuclei: allData.nuclei.filter((result) =>
-            isSameUrl(currentUrl, result.host)
-          ),
-          lhr: allData.lhr.filter((result) =>
-            isSameUrl(currentUrl, result.url)
-          ),
+          nuclei: allData.nuclei
+            .filter((result) => isSameUrl(currentUrl, result.host))
+            .map(({ request, response, ...data }) => data), // strip some data
+          lhr: allData.lhr
+            .filter((result) => isSameUrl(currentUrl, result.url))
+            .map(({ url, filename, result }) => {
+              const { requestedUrl, finalUrl, categories } = result;
+              return {
+                // strip some data
+                url,
+                filename,
+                result: {
+                  requestedUrl,
+                  finalUrl,
+                  categories,
+                },
+              };
+            }),
           owasp: allData.owasp.filter((result) =>
             isSameHost(currentUrl, result.url)
           ),
