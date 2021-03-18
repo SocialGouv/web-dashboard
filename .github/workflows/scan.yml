@@ -71,7 +71,7 @@ jobs:
     needs: scans
     strategy:
       fail-fast: false
-      max-parallel: 1
+      max-parallel: 3
       matrix:
         url: ${{fromJson(needs.scans.outputs.urls_json)}}
     steps:
@@ -109,10 +109,12 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     name: Lighthouse scan
-    needs: zap_scan
+    needs:
+      - scans
+      - zap_scan
     strategy:
       fail-fast: false
-      max-parallel: 1
+      max-parallel: 3
       matrix:
         url: ${{fromJson(needs.scans.outputs.urls_json)}}
     steps:
