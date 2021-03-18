@@ -69,6 +69,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Zap scan
     needs: scans
+    continue-on-error: true
     strategy:
       fail-fast: false
       max-parallel: 3
@@ -112,6 +113,7 @@ jobs:
     needs:
       - scans
       - zap_scan
+    continue-on-error: true
     strategy:
       fail-fast: false
       max-parallel: 3
