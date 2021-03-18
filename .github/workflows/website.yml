@@ -10,6 +10,7 @@ jobs:
     name: Website
     steps:
       - uses: actions/checkout@v2
+
       - name: Build
         run: |
           LATEST=$(find ./results/* -type d -prune | tail -n 1)
@@ -18,6 +19,8 @@ jobs:
           cd www
           yarn
           CI=false yarn build
+          touch build/.nojekyll
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
