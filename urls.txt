@@ -6,7 +6,6 @@ https://arretonslesviolences.gouv.fr
 https://bonusmalus.travail-emploi.gouv.fr
 https://boussole.jeunes.gouv.fr
 https://certificationprofessionnelle.fr
-https://certifpro.francecompetences.fr/webapp/rncp
 https://cnaop.gouv.fr
 https://cng.sante.fr
 https://cnle.gouv.fr
