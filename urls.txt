@@ -7,7 +7,7 @@ https://bonusmalus.travail-emploi.gouv.fr
 https://boussole.jeunes.gouv.fr
 https://certificationprofessionnelle.fr
 https://cnaop.gouv.fr
-https://cng.sante.fr
+https://www.cng.sante.fr
 https://cnle.gouv.fr
 https://cns.sante.fr
 https://dares.travail-emploi.gouv.fr
