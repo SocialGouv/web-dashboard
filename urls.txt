@@ -1,5 +1,4 @@
 https://admin.decouvrirlemonde.jeunes.gouv.fr
-https://administration-transparence.intranet.sante.gouv.fr
 https://adoption.gouv.fr
 https://aerossl.sante.gouv.fr
 https://agencedusport.fr
