@@ -1,30 +1,13 @@
 import * as React from "react";
-import { Home, Search, Cloud, ExternalLink } from "react-feather";
+import { Cloud } from "react-feather";
 
-import {
-  Alert,
-  CardDeck,
-  Badge,
-  Card,
-  Container,
-  Row,
-  Col,
-  Navbar,
-  Nav,
-  NavDropdown,
-  Jumbotron,
-  Form,
-  FormControl,
-  Button,
-  Table,
-} from "react-bootstrap";
+import { Container, Row, Navbar, Jumbotron } from "react-bootstrap";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  NavLink,
   useParams,
 } from "react-router-dom";
 
@@ -82,7 +65,7 @@ const UrlDetail: React.FC<UrlDetailProps> = ({ ...props }) => {
         style={{ height: 50, marginTop: 10, paddingTop: 20, marginBottom: 10 }}
       >
         <h3 className="text-center">
-          <a href={`https://${url}`} target="_blank">
+          <a href={`https://${url}`} rel="noreferrer noopener" target="_blank">
             https://{url}
           </a>
         </h3>

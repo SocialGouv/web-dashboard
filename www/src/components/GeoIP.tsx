@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Alert, Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 import Flags from "country-flag-icons/react/3x2";
 
 import { Panel } from "./Panel";
@@ -7,9 +7,6 @@ import { Panel } from "./Panel";
 type GeoIPProps = { data: any };
 
 export const GeoIP: React.FC<GeoIPProps> = ({ data }) => {
-  console.log("data", data);
-  const rows = data;
-  const hasResults = true; //data.result && data.result.length;
   return (
     (data.length && (
       <Panel title="GeoIP" info="Géolocalisation des requêtes de la page">

@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import { Alert, Nav, Table, Badge } from "react-bootstrap";
+import { Alert, Table } from "react-bootstrap";
 import { ExternalLink } from "react-feather";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { smallUrl } from "../utils";
 
@@ -207,6 +207,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
               <a
                 href="https://developers.google.com/web/tools/lighthouse"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 Google LightHouse
               </a>
@@ -215,7 +216,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
           </tr>
           <tr>
             <td>
-              <a href="https://www.zaproxy.org/" target="_blank">
+              <a
+                href="https://www.zaproxy.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 ZA proxy
               </a>
             </td>
@@ -226,7 +231,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
           </tr>
           <tr>
             <td>
-              <a href="https://www.ssllabs.com/" target="_blank">
+              <a
+                href="https://www.ssllabs.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 SSLLabs
               </a>
             </td>
@@ -234,7 +243,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
           </tr>
           <tr>
             <td>
-              <a href="https://observatory.mozilla.org/" target="_blank">
+              <a
+                href="https://observatory.mozilla.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Mozilla HTTP observatory
               </a>
             </td>
@@ -246,7 +259,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
           </tr>
           <tr>
             <td>
-              <a href="https://nuclei.projectdiscovery.io/" target="_blank">
+              <a
+                href="https://nuclei.projectdiscovery.io/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Nuclei
               </a>
             </td>
@@ -254,7 +271,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
           </tr>
           <tr>
             <td>
-              <a href="https://www.maxmind.com" target="_blank">
+              <a
+                href="https://www.maxmind.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 GeoIP
               </a>
             </td>
