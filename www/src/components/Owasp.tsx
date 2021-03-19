@@ -37,7 +37,7 @@ type OwaspProps = { data: any };
 
 export const Owasp: React.FC<OwaspProps> = ({ data }) => {
   const alerts = data.flatMap((row: any) => {
-    return row.result && row.result.site.flatMap((site: any) => site.alerts);
+    return row && row.site.flatMap((site: any) => site.alerts);
   });
   alerts.sort(orderBySeverity);
   const url =

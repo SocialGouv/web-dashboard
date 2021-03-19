@@ -87,6 +87,7 @@ const exportData = async (resultsPath) => {
         owasp: allData.owasp
           .filter((result) => isSameHost(currentUrl, result.url))
           .map((result) => ({
+            filename: result.filename,
             ...result.result,
           })),
         geoip: allData.geoip.filter((result) =>

@@ -29,41 +29,45 @@ export const LightHouse: React.FC<LightHouseProps> = ({ data }) => {
         url={url}
       >
         {data.map((row: any, i: number) => {
+          const order = [
+            "accessibility",
+            "performance",
+            "seo",
+            "best-practices",
+          ];
           return (
             <Row key={row.url + i}>
-              {Object.keys(row.result.categories)
-                .filter((key) => key !== "pwa")
-                .map((key: any, i: number) => {
-                  const category = row.result.categories[key] as Category;
-                  return (
-                    <Col
-                      key={category.title + i}
-                      xs={12}
-                      md={6}
-                      lg={3}
-                      className="text-center mb-3"
-                    >
-                      <Card>
-                        <Gauge
-                          width={100}
-                          height={60}
-                          value={category.score * 100}
-                          minValue={0}
-                          maxValue={100}
-                          animationSpeed={32}
-                        />
-                        <Card.Body>
-                          <Card.Title>{category.title}</Card.Title>
-                          <Card.Title
-                            style={{ fontSize: "2rem", fontWeight: "bold" }}
-                          >
-                            {category.score}
-                          </Card.Title>
-                        </Card.Body>
-                      </Card>
-                    </Col>
-                  );
-                })}
+              {order.map((key: any, i: number) => {
+                const category = row.categories[key] as Category;
+                return (
+                  <Col
+                    key={category.title + i}
+                    xs={12}
+                    md={6}
+                    lg={3}
+                    className="text-center mb-3"
+                  >
+                    <Card>
+                      <Gauge
+                        width={100}
+                        height={60}
+                        value={category.score * 100}
+                        minValue={0}
+                        maxValue={100}
+                        animationSpeed={32}
+                      />
+                      <Card.Body>
+                        <Card.Title>{category.title}</Card.Title>
+                        <Card.Title
+                          style={{ fontSize: "2rem", fontWeight: "bold" }}
+                        >
+                          {(category.score * 100).toFixed() + "%"}
+                        </Card.Title>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                );
+              })}
             </Row>
           );
         })}

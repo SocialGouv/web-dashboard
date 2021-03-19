@@ -10,8 +10,8 @@ type SSLProps = { data: any };
 export const SSL: React.FC<SSLProps> = ({ data }) => {
   const url =
     (data.length &&
-      data[0].result.endpoints &&
-      `https://www.ssllabs.com/ssltest/analyze.html?d=${data[0].url}`) ||
+      data[0].endpoints &&
+      `https://www.ssllabs.com/ssltest/analyze.html?d=${data[0].host}`) ||
     null;
   return (
     url && (
@@ -21,7 +21,7 @@ export const SSL: React.FC<SSLProps> = ({ data }) => {
             <React.Fragment key={row.url + i}>
               <Row>
                 <Col>
-                  {row.result.endpoints.map((endpoint: any, i: number) => {
+                  {row.endpoints.map((endpoint: any, i: number) => {
                     return (
                       <div key={endpoint.host + i}>
                         {endpoint.host}
