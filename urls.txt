@@ -42,7 +42,6 @@ https://preventionhiver.sports.gouv.fr
 https://publisocial.fr
 https://reforme-retraite.gouv.fr
 https://renfortrh.solidarites-sante.gouv.fr
-https://sante.gouv.fr
 https://savoirrouleravelo.fr
 https://si-enquetes-valid.sante.gouv.fr
 https://si-enquetes.sante.gouv.fr
