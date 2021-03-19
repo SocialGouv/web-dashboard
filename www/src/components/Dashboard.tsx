@@ -98,7 +98,16 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
       <br />
       <Alert variant="info">
         Cliquez sur une des URLs pour obtenir le détail puis sur{" "}
-        <ExternalLink size={16} /> pour accéder au rapport par produit.
+        <ExternalLink size={16} /> pour accéder au rapport par produit. Pour
+        ajouter votre URL, éditez{" "}
+        <a
+          href="https://github.com/SocialGouv/dnum-dashboard/edit/master/urls.txt"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          ce fichier
+        </a>
+        .
       </Alert>
       <br />
       <Table striped bordered hover>
@@ -111,11 +120,11 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
             />
             <ColumnHeader
               title="Performance"
-              info="Performances de chargment des pages web"
+              info="Performances de chargement des pages web"
             />
             <ColumnHeader
               title="SEO"
-              info="Bonnes pratiques en matière de référencement natuel"
+              info="Bonnes pratiques en matière de référencement naturel"
             />
             <ColumnHeader
               title="SSL"
