@@ -1,12 +1,15 @@
 import * as React from "react";
 
 import { Alert, Table } from "react-bootstrap";
-import { ExternalLink, Slash } from "react-feather";
+import { ExternalLink, Slash, Info } from "react-feather";
 import { Link } from "react-router-dom";
+import Tooltip from "rc-tooltip";
 
 import { smallUrl } from "../utils";
 
 import { Grade } from "./Grade";
+
+import "rc-tooltip/assets/bootstrap.css";
 
 type DashboardProps = { report: any };
 
@@ -68,6 +71,25 @@ const getOwaspGrade = (owaspAlerts: any) => {
     : "A";
 };
 
+type ColumnHeaderProps = {
+  title: string;
+  info: string;
+};
+
+const ColumnHeader: React.FC<ColumnHeaderProps> = ({ title, info }) => (
+  <th className="text-center">
+    <Tooltip
+      placement="bottom"
+      trigger={["hover"]}
+      overlay={<span>{info}</span>}
+    >
+      <span>
+        {title} <Info size={16} style={{ marginLeft: 5 }} />
+      </span>
+    </Tooltip>
+  </th>
+);
+
 export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
   console.log("report", report);
 
@@ -83,15 +105,36 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
         <thead>
           <tr>
             <th>url</th>
-            <th className="text-center">a11y</th>
-            <th className="text-center">perf</th>
-            <th className="text-center">SEO</th>
-            <th className="text-center">SSL</th>
-            <th className="text-center">HTTP</th>
-            <th className="text-center">OWASP</th>
-            <th className="text-center">Trackers</th>
-            <th className="text-center">Cookies</th>
-            <th className="text-center">Nuclei</th>
+            <ColumnHeader
+              title="Accessibilité"
+              info="Bonnes pratiques en matière d'accessibilité web"
+            />
+            <ColumnHeader
+              title="Performance"
+              info="Performances de chargment des pages web"
+            />
+            <ColumnHeader
+              title="SEO"
+              info="Bonnes pratiques en matière de référencement natuel"
+            />
+            <ColumnHeader
+              title="SSL"
+              info="Niveau de sécurité du certificat SSL"
+            />
+            <ColumnHeader
+              title="HTTP"
+              info="Bonnes pratiques de configuration HTTP"
+            />
+            <ColumnHeader
+              title="OWASP"
+              info="Bonnes pratiques de sécurité OWASP"
+            />
+            <ColumnHeader
+              title="Trackers"
+              info="Nombre de scripts externes présents"
+            />
+            <ColumnHeader title="Cookies" info="Nombre de cookies présents" />
+            <ColumnHeader title="Nuclei" info="Erreurs de configuration" />
           </tr>
         </thead>
         <tbody>
