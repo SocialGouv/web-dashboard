@@ -18,11 +18,36 @@ const smallUrl = (url) =>
     .replace(/\/$/, "");
 
 const isSameUrl = (url1, url2) => smallUrl(url1) === smallUrl(url2);
+
 const isSameHost = (url1, url2) => toHostname(url1) === toHostname(url2);
+
 const removeKey = (obj, key) => {
   const { [key]: arg, ...others } = obj;
   return others;
 };
+
+const owaspCleanup = (result) => {
+  return {
+    ...result,
+    site: result.site.map((site) => {
+      return {
+        ...site,
+        alerts: site.alerts.map(
+          ({ name, riskcode, confidence, riskdesc, desc, ...others }) => {
+            return {
+              name,
+              riskcode,
+              confidence,
+              riskdesc,
+              desc,
+            };
+          }
+        ),
+      };
+    }),
+  };
+};
+
 const exportData = async (resultsPath) => {
   // aggregate results
   const allData = {
@@ -51,7 +76,7 @@ const exportData = async (resultsPath) => {
         http: allData.http
           .filter((result) => isSameUrl(currentUrl, result.url))
           .map((result) => ({
-            ...result.result,
+            ...removeKey(result.result, "responseHeaders"),
           })),
         ssl: allData.ssl
           .filter((result) => isSameUrl(currentUrl, result.url))
@@ -88,7 +113,7 @@ const exportData = async (resultsPath) => {
           .filter((result) => isSameHost(currentUrl, result.url))
           .map((result) => ({
             filename: result.filename,
-            ...result.result,
+            ...owaspCleanup(result.result),
           })),
         geoip: allData.geoip.filter((result) =>
           isSameUrl(currentUrl, result.url)
