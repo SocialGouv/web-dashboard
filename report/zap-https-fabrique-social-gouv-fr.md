@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 15:07:12
+Generated on Mon, 22 Mar 2021 07:41:32
 
 
 ## Summary of Alerts
@@ -441,7 +441,7 @@ Instances: 1
 <p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
   
 ### Other information
-<p>The following pattern was used: \bQUERY\b and was detected in the element starting with: "<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"O7OtuoHXreNOqm_niz", see evidence field for the suspicious comment/snippet.</p>
+<p>The following pattern was used: \bQUERY\b and was detected in the element starting with: "<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"_GdVO17_Eo65cHSGYz", see evidence field for the suspicious comment/snippet.</p>
   
 ### Reference
 * 

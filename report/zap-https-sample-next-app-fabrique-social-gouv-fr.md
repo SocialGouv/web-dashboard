@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 15:17:25
+Generated on Mon, 22 Mar 2021 08:18:31
 
 
 ## Summary of Alerts
@@ -452,23 +452,23 @@ Instances: 3
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/268e00513c8677492851e6cbb0fdc9972b5d7e28.0d8565ee80113da56ea8.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/268e00513c8677492851e6cbb0fdc9972b5d7e28.0d8565ee80113da56ea8.js)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/main-b512ccd88ef15102444a.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/main-b512ccd88ef15102444a.js)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page3](https://sample-next-app.fabrique.social.gouv.fr/page3)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page2](https://sample-next-app.fabrique.social.gouv.fr/page2)
   
   
   * Method: `GET`
@@ -657,17 +657,6 @@ Instances: 6
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `X-Powered-By: Express`
-  
-  
-  
-  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/favicon.ico](https://sample-next-app.fabrique.social.gouv.fr/favicon.ico)
   
   
@@ -745,6 +734,17 @@ Instances: 6
   
   
   
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page3](https://sample-next-app.fabrique.social.gouv.fr/page3)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `X-Powered-By: Next.js`
+  
+  
+  
+  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/main-b512ccd88ef15102444a.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/main-b512ccd88ef15102444a.js)
   
   
@@ -756,7 +756,7 @@ Instances: 6
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/login](https://sample-next-app.fabrique.social.gouv.fr/login)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page2](https://sample-next-app.fabrique.social.gouv.fr/page2)
   
   
   * Method: `GET`
@@ -767,13 +767,13 @@ Instances: 6
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/login](https://sample-next-app.fabrique.social.gouv.fr/login)
   
   
   * Method: `GET`
   
   
-  * Evidence: `X-Powered-By: Express`
+  * Evidence: `X-Powered-By: Next.js`
   
   
   
@@ -809,17 +809,6 @@ Instances: 11
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `nginx/1.17.8`
-  
-  
-  
-  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/login](https://sample-next-app.fabrique.social.gouv.fr/login)
   
   
@@ -842,17 +831,6 @@ Instances: 11
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `nginx/1.17.8`
-  
-  
-  
-  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/admin](https://sample-next-app.fabrique.social.gouv.fr/admin)
   
   
@@ -865,6 +843,17 @@ Instances: 11
   
   
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/robots.txt](https://sample-next-app.fabrique.social.gouv.fr/robots.txt)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `nginx/1.17.8`
+  
+  
+  
+  
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page2](https://sample-next-app.fabrique.social.gouv.fr/page2)
   
   
   * Method: `GET`
@@ -920,6 +909,17 @@ Instances: 11
   
   
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/](https://sample-next-app.fabrique.social.gouv.fr/)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `nginx/1.17.8`
+  
+  
+  
+  
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page3](https://sample-next-app.fabrique.social.gouv.fr/page3)
   
   
   * Method: `GET`
@@ -1051,7 +1051,7 @@ Instances: 11
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/78c77aa736b0e38dedc00c2cf81c4ed699de0c76.dba85c4245681f2271f2.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/78c77aa736b0e38dedc00c2cf81c4ed699de0c76.dba85c4245681f2271f2.js)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/admin](https://sample-next-app.fabrique.social.gouv.fr/admin)
   
   
   * Method: `GET`
@@ -1062,7 +1062,7 @@ Instances: 11
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/admin](https://sample-next-app.fabrique.social.gouv.fr/admin)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page2](https://sample-next-app.fabrique.social.gouv.fr/page2)
   
   
   * Method: `GET`
@@ -1272,6 +1272,17 @@ Instances: 10
   
   
   
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page3](https://sample-next-app.fabrique.social.gouv.fr/page3)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `query`
+  
+  
+  
+  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/admin](https://sample-next-app.fabrique.social.gouv.fr/admin)
   
   
@@ -1338,17 +1349,6 @@ Instances: 10
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `from`
-  
-  
-  
-  
 * URL: [https://sample-next-app.fabrique.social.gouv.fr/](https://sample-next-app.fabrique.social.gouv.fr/)
   
   
@@ -1360,7 +1360,7 @@ Instances: 10
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/268e00513c8677492851e6cbb0fdc9972b5d7e28.0d8565ee80113da56ea8.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/268e00513c8677492851e6cbb0fdc9972b5d7e28.0d8565ee80113da56ea8.js)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr](https://sample-next-app.fabrique.social.gouv.fr)
   
   
   * Method: `GET`
@@ -1371,7 +1371,7 @@ Instances: 10
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr](https://sample-next-app.fabrique.social.gouv.fr)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page2](https://sample-next-app.fabrique.social.gouv.fr/page2)
   
   
   * Method: `GET`
@@ -1613,13 +1613,10 @@ Instances: 11
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page2](https://sample-next-app.fabrique.social.gouv.fr/page2)
   
   
   * Method: `GET`
-  
-  
-  * Evidence: `max-age=31536000`
   
   
   
@@ -1635,18 +1632,15 @@ Instances: 11
   
   
   
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js](https://sample-next-app.fabrique.social.gouv.fr/_next/static/chunks/bf182f2483b3988147ad28519374cb39c5c5d1d3.bce5927e7ffd99daa2c6.js)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/](https://sample-next-app.fabrique.social.gouv.fr/)
   
   
   * Method: `GET`
   
   
-  * Evidence: `max-age=31536000`
   
   
-  
-  
-* URL: [https://sample-next-app.fabrique.social.gouv.fr/](https://sample-next-app.fabrique.social.gouv.fr/)
+* URL: [https://sample-next-app.fabrique.social.gouv.fr/page3](https://sample-next-app.fabrique.social.gouv.fr/page3)
   
   
   * Method: `GET`

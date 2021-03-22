@@ -81,7 +81,7 @@ ZAP Scanning Report
         <p>
 </p>
         <h3 class="left-header">Summary of Alerts</h3>
-        <h3 class="time-stamp">Generated on Wed, 17 Mar 2021 15:20:31</h3>
+        <h3 class="time-stamp">Generated on Mon, 22 Mar 2021 08:28:28</h3>
         <table width="45%" class="summary">
             <tr bgcolor="#666666">
                 <th width="45%" height="24">Risk 
@@ -92,7 +92,7 @@ ZAP Scanning Report
                 <td><a href="#high">High</a></td><td align="center">0</td>
             </tr>
             <tr bgcolor="#e8e8e8">
-                <td><a href="#medium">Medium</a></td><td align="center">2</td>
+                <td><a href="#medium">Medium</a></td><td align="center">3</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td><a href="#low">Low</a></td><td align="center">4</td>
@@ -106,6 +106,9 @@ ZAP Scanning Report
         <table width="75%" class="alerts">
             <tr bgcolor="#666666">
                 <th width="60%" height="24">Name</th><th width="20%" align="center">Risk Level</th><th width="20%" align="center">Number of Instances</th>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td>Application Error Disclosure</td><td align="center">Medium</td><td align="center">1</td>
             </tr>
             <tr bgcolor="#e8e8e8">
                 <td>Content Security Policy (CSP) Header Not Set</td><td align="center">Medium</td><td align="center">4</td>
@@ -143,6 +146,67 @@ ZAP Scanning Report
         </table>
         <div class="spacer-lg"></div>
         <h3>Alert Detail</h3>
+        <div class="spacer"></div>
+        <table width="100%" class="results">
+              
+  
+  
+  
+            <tr height="24" class="risk-medium">
+                <th width="20%"><a name="medium"></a>Medium (Medium)</th><th width="80%">Application Error Disclosure</th>
+            </tr>
+              
+  
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Description</td><td width="80%"><p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p></td>
+            </tr>
+            <TR vAlign="top">
+                <TD colspan="2"></TD>
+            </TR>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">Internal Server Error</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Instances</td><td width="80%">1</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Solution</td><td width="80%"><p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Reference</td><td width="80%"><p></p></td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">CWE Id</td><td width="80%">200</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">WASC Id</td><td width="80%">13</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%">Source ID</td><td width="80%">3</td>
+            </tr>
+            
+        </table>
         <div class="spacer"></div>
         <table width="100%" class="results">
               
@@ -366,16 +430,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/robots.txt</td>
             </tr>
               
@@ -397,6 +451,16 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -584,7 +648,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -701,6 +765,20 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/robots.txt</td>
             </tr>
               
@@ -771,20 +849,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Parameter</td><td width="80%">X-Content-Type-Options</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%">Instances</td><td width="80%">6</td>
             </tr>
               
@@ -839,7 +903,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -907,7 +971,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1087,7 +1151,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1097,7 +1161,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1191,21 +1255,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">00000000</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1219,6 +1269,20 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">00000000</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%">Instances</td><td width="80%">2</td>
             </tr>
               
@@ -1227,7 +1291,7 @@ ZAP Scanning Report
             </tr>
               
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Other information</td><td width="80%"><p>00000000, which evaluates to: 1970-01-01 00:00:00</p></td>
+                <td width="20%">Other information</td><td width="80%"><p>20201008, which evaluates to: 1970-08-22 19:23:28</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>

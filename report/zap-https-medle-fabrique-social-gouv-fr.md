@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 15:08:49
+Generated on Mon, 22 Mar 2021 07:47:41
 
 
 ## Summary of Alerts
@@ -1037,28 +1037,6 @@ Instances: 11
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr/forgotPassword](https://medle.fabrique.social.gouv.fr/forgotPassword)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `e57-UyG15mrBVMaUDp2/pimkXNmWpAo`
-  
-  
-  
-  
-* URL: [https://medle.fabrique.social.gouv.fr/](https://medle.fabrique.social.gouv.fr/)
-  
-  
-  * Method: `POST`
-  
-  
-  * Evidence: `19f5-hColCgf9id2M3s/eQKJXHZvz35s`
-  
-  
-  
-  
 * URL: [https://medle.fabrique.social.gouv.fr/_next/static/chunks/032d456b5538f64c5038825505ae0488a07c6733.2197a942e8df3d0eee88.js](https://medle.fabrique.social.gouv.fr/_next/static/chunks/032d456b5538f64c5038825505ae0488a07c6733.2197a942e8df3d0eee88.js)
   
   
@@ -1070,35 +1048,24 @@ Instances: 11
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr/sitemap.xml](https://medle.fabrique.social.gouv.fr/sitemap.xml)
+* URL: [https://medle.fabrique.social.gouv.fr/forgotPassword](https://medle.fabrique.social.gouv.fr/forgotPassword)
   
   
   * Method: `GET`
   
   
-  * Evidence: `e22-Hr4PZP/miH8yD3YkleWoOUP1zVU`
+  * Evidence: `e57-gwLaIiTzJwsDwldWuzVjPAEJkrs`
   
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr/](https://medle.fabrique.social.gouv.fr/)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `19f5-hColCgf9id2M3s/eQKJXHZvz35s`
-  
-  
-  
-  
-* URL: [https://medle.fabrique.social.gouv.fr/createAccount](https://medle.fabrique.social.gouv.fr/createAccount)
+* URL: [https://medle.fabrique.social.gouv.fr/robots.txt](https://medle.fabrique.social.gouv.fr/robots.txt)
   
   
   * Method: `GET`
   
   
-  * Evidence: `e47-+DBwGmA5gQ+moCC0OgUD/GLvihU`
+  * Evidence: `e22-LBKOzAXbqHbfQ4DyufnExfh1Jwo`
   
   
   
@@ -1109,7 +1076,18 @@ Instances: 11
   * Method: `GET`
   
   
-  * Evidence: `19f5-hColCgf9id2M3s/eQKJXHZvz35s`
+  * Evidence: `19f5-24ciLLatHrEvrcokLzdsQ7GmUek`
+  
+  
+  
+  
+* URL: [https://medle.fabrique.social.gouv.fr/createAccount](https://medle.fabrique.social.gouv.fr/createAccount)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `e47-mgx/ZMG3ntr3uTCedCh+nOYN5V8`
   
   
   
@@ -1125,13 +1103,35 @@ Instances: 11
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr/robots.txt](https://medle.fabrique.social.gouv.fr/robots.txt)
+* URL: [https://medle.fabrique.social.gouv.fr/](https://medle.fabrique.social.gouv.fr/)
   
   
   * Method: `GET`
   
   
-  * Evidence: `e22-Hr4PZP/miH8yD3YkleWoOUP1zVU`
+  * Evidence: `19f5-24ciLLatHrEvrcokLzdsQ7GmUek`
+  
+  
+  
+  
+* URL: [https://medle.fabrique.social.gouv.fr/sitemap.xml](https://medle.fabrique.social.gouv.fr/sitemap.xml)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `e22-LBKOzAXbqHbfQ4DyufnExfh1Jwo`
+  
+  
+  
+  
+* URL: [https://medle.fabrique.social.gouv.fr/](https://medle.fabrique.social.gouv.fr/)
+  
+  
+  * Method: `POST`
+  
+  
+  * Evidence: `19f5-24ciLLatHrEvrcokLzdsQ7GmUek`
   
   
   
@@ -1142,7 +1142,7 @@ Instances: 9
 <p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>
   
 ### Other information
-<p>{��S!��j�TƔ\x000e���)�\ٖ�</p><p></p>
+<p>\x0000\x0010�\x0010Q� ��0ӏA\x0014�QU�a��qן�\x0018��Y�����ۯ�\x001c��]�㞻�߿</p>
   
 ### Reference
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage
@@ -1169,18 +1169,7 @@ Instances: 9
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr/](https://medle.fabrique.social.gouv.fr/)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `query`
-  
-  
-  
-  
-* URL: [https://medle.fabrique.social.gouv.fr/forgotPassword](https://medle.fabrique.social.gouv.fr/forgotPassword)
+* URL: [https://medle.fabrique.social.gouv.fr](https://medle.fabrique.social.gouv.fr)
   
   
   * Method: `GET`
@@ -1202,7 +1191,18 @@ Instances: 9
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr](https://medle.fabrique.social.gouv.fr)
+* URL: [https://medle.fabrique.social.gouv.fr/robots.txt](https://medle.fabrique.social.gouv.fr/robots.txt)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `query`
+  
+  
+  
+  
+* URL: [https://medle.fabrique.social.gouv.fr/createAccount](https://medle.fabrique.social.gouv.fr/createAccount)
   
   
   * Method: `GET`
@@ -1220,6 +1220,17 @@ Instances: 9
   
   
   * Evidence: `select`
+  
+  
+  
+  
+* URL: [https://medle.fabrique.social.gouv.fr/](https://medle.fabrique.social.gouv.fr/)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `query`
   
   
   
@@ -1257,18 +1268,7 @@ Instances: 9
   
   
   
-* URL: [https://medle.fabrique.social.gouv.fr/robots.txt](https://medle.fabrique.social.gouv.fr/robots.txt)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `query`
-  
-  
-  
-  
-* URL: [https://medle.fabrique.social.gouv.fr/createAccount](https://medle.fabrique.social.gouv.fr/createAccount)
+* URL: [https://medle.fabrique.social.gouv.fr/forgotPassword](https://medle.fabrique.social.gouv.fr/forgotPassword)
   
   
   * Method: `GET`
@@ -1296,7 +1296,7 @@ Instances: 11
 <p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
   
 ### Other information
-<p>The following pattern was used: \bQUERY\b and was detected in the element starting with: "<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"message":""}},"page":"/","query":{},"buildId":"3lYAZO", see evidence field for the suspicious comment/snippet.</p>
+<p>The following pattern was used: \bQUERY\b and was detected in the element starting with: "<script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"message":""}},"page":"/","query":{},"buildId":"agStdl", see evidence field for the suspicious comment/snippet.</p>
   
 ### Reference
 * 

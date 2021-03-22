@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 15:01:47
+Generated on Mon, 22 Mar 2021 07:22:31
 
 
 ## Summary of Alerts
@@ -111,7 +111,7 @@ Instances: 1
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/mentions-legales](https://covid-19.sante.gouv.fr/mentions-legales)
+* URL: [https://covid-19.sante.gouv.fr](https://covid-19.sante.gouv.fr)
   
   
   * Method: `GET`
@@ -191,7 +191,7 @@ Instances: 3
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/sitemap.xml](https://covid-19.sante.gouv.fr/sitemap.xml)
+* URL: [https://covid-19.sante.gouv.fr](https://covid-19.sante.gouv.fr)
   
   
   * Method: `GET`
@@ -205,7 +205,7 @@ Instances: 3
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/mentions-legales](https://covid-19.sante.gouv.fr/mentions-legales)
+* URL: [https://covid-19.sante.gouv.fr/sitemap.xml](https://covid-19.sante.gouv.fr/sitemap.xml)
   
   
   * Method: `GET`
@@ -458,7 +458,7 @@ Instances: 2
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/mentions-legales](https://covid-19.sante.gouv.fr/mentions-legales)
+* URL: [https://covid-19.sante.gouv.fr](https://covid-19.sante.gouv.fr)
   
   
   * Method: `GET`
@@ -510,7 +510,7 @@ Instances: 3
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/1f72bb8ecc362637e37f9e978fb4d3c4c3171f13.87c906f9b58ac67d9fa7.js](https://covid-19.sante.gouv.fr/_next/static/chunks/1f72bb8ecc362637e37f9e978fb4d3c4c3171f13.87c906f9b58ac67d9fa7.js)
+* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/f655c2139f896521d1241bf2cf50e08090c9ece1.a76a9a72a9b05cdd0e65.js](https://covid-19.sante.gouv.fr/_next/static/chunks/f655c2139f896521d1241bf2cf50e08090c9ece1.a76a9a72a9b05cdd0e65.js)
   
   
   * Method: `GET`
@@ -521,7 +521,7 @@ Instances: 3
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.db4c39adb421f7a92299.js](https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.db4c39adb421f7a92299.js)
+* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.b4f0087deb8118709808.js](https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.b4f0087deb8118709808.js)
   
   
   * Method: `GET`
@@ -619,7 +619,7 @@ Instances: 3
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/webpack-baecb4c25ef399be244d.js](https://covid-19.sante.gouv.fr/_next/static/chunks/webpack-baecb4c25ef399be244d.js)
+* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/webpack-a6606f2985ee8a0e3455.js](https://covid-19.sante.gouv.fr/_next/static/chunks/webpack-a6606f2985ee8a0e3455.js)
   
   
   * Method: `GET`
@@ -965,6 +965,17 @@ Instances: 11
   
   
   
+* URL: [https://covid-19.sante.gouv.fr/_next/static/css/3cb66964985f81ed5967.css](https://covid-19.sante.gouv.fr/_next/static/css/3cb66964985f81ed5967.css)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `nginx/1.17.8`
+  
+  
+  
+  
 * URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/main-021ccc3ef87e5ad52e26.js](https://covid-19.sante.gouv.fr/_next/static/chunks/main-021ccc3ef87e5ad52e26.js)
   
   
@@ -977,17 +988,6 @@ Instances: 11
   
   
 * URL: [https://covid-19.sante.gouv.fr/login](https://covid-19.sante.gouv.fr/login)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `nginx/1.17.8`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr/_next/static/css/8a0fd03bf391385e7f4b.css](https://covid-19.sante.gouv.fr/_next/static/css/8a0fd03bf391385e7f4b.css)
   
   
   * Method: `GET`
@@ -1031,46 +1031,13 @@ Instances: 11
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/mentions-legales](https://covid-19.sante.gouv.fr/mentions-legales)
+* URL: [https://covid-19.sante.gouv.fr/login](https://covid-19.sante.gouv.fr/login)
   
   
   * Method: `GET`
   
   
-  * Evidence: `2eba-2oE4dufxWXpCwPAWNX2o21FoNuE`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr/login?password=ZAP&username=foo-bar%40example.com](https://covid-19.sante.gouv.fr/login?password=ZAP&username=foo-bar%40example.com)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `2fc3-0Lgyo1GVBIT57OpWQ+0caCwbL/I`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr/CGU](https://covid-19.sante.gouv.fr/CGU)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `51fe-ka1tDbuI0dH5fmKqpn/TkFpueQs`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr](https://covid-19.sante.gouv.fr)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `4219-9mYYpIlF2jgfoqipTWVVLKGd8Hc`
+  * Evidence: `2f92-f7zTcJm0MM5uaJmVo5HN3sSxjNE`
   
   
   
@@ -1081,40 +1048,18 @@ Instances: 11
   * Method: `GET`
   
   
-  * Evidence: `4219-9mYYpIlF2jgfoqipTWVVLKGd8Hc`
+  * Evidence: `4219-dadftoHxhhQOoHg7KfE2VsGJLfY`
   
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/politique-de-confidentialite](https://covid-19.sante.gouv.fr/politique-de-confidentialite)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `3c49-DcK0OqvlVKJZMJKDbM1vV5wVcEI`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr/login](https://covid-19.sante.gouv.fr/login)
+* URL: [https://covid-19.sante.gouv.fr/mentions-legales](https://covid-19.sante.gouv.fr/mentions-legales)
   
   
   * Method: `GET`
   
   
-  * Evidence: `2f92-wRiTWdGTT8SaIWlwak3oK+RsJ9Q`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr/sitemap.xml](https://covid-19.sante.gouv.fr/sitemap.xml)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `2ad5-D+oto14HcZfNaTL6pZGWajQA8N4`
+  * Evidence: `2eba-zmd63p+buswIF6IfKPU0qnf217o`
   
   
   
@@ -1125,7 +1070,62 @@ Instances: 11
   * Method: `GET`
   
   
-  * Evidence: `3AkfUxg6VJ4Ed9kNh82z0PfcJPh0Wn17Ci`
+  * Evidence: `3A07cW1ikebg0zwPjuGdTVT74sGRkInqGj`
+  
+  
+  
+  
+* URL: [https://covid-19.sante.gouv.fr/sitemap.xml](https://covid-19.sante.gouv.fr/sitemap.xml)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `2ad5-ZA1Pq5By7D+OBL3t5z3Zy0gy608`
+  
+  
+  
+  
+* URL: [https://covid-19.sante.gouv.fr/login?password=ZAP&username=foo-bar%40example.com](https://covid-19.sante.gouv.fr/login?password=ZAP&username=foo-bar%40example.com)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `2fc3-bZADiPaOzSOmHw03jV0XVpbyaYY`
+  
+  
+  
+  
+* URL: [https://covid-19.sante.gouv.fr/CGU](https://covid-19.sante.gouv.fr/CGU)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `51fe-omRPf9TyyP7JM7EI4Q01+GxwgAg`
+  
+  
+  
+  
+* URL: [https://covid-19.sante.gouv.fr/politique-de-confidentialite](https://covid-19.sante.gouv.fr/politique-de-confidentialite)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `3c49-or/sjMgx1767o14gQLL9r+IUUo0`
+  
+  
+  
+  
+* URL: [https://covid-19.sante.gouv.fr](https://covid-19.sante.gouv.fr)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `4219-dadftoHxhhQOoHg7KfE2VsGJLfY`
   
   
   
@@ -1136,7 +1136,7 @@ Instances: 9
 <p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>
   
 ### Other information
-<p>����j\x0004�۟�e�\x000b\x0003�X���mE�ۄ</p>
+<p>��v���M�f��9��fV�G7{\x0012�3D</p>
   
 ### Reference
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage
@@ -1424,6 +1424,17 @@ Instances: 3
   
   
   
+* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.b4f0087deb8118709808.js](https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.b4f0087deb8118709808.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `select`
+  
+  
+  
+  
 * URL: [https://covid-19.sante.gouv.fr/mentions-legales](https://covid-19.sante.gouv.fr/mentions-legales)
   
   
@@ -1431,17 +1442,6 @@ Instances: 3
   
   
   * Evidence: `query`
-  
-  
-  
-  
-* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.db4c39adb421f7a92299.js](https://covid-19.sante.gouv.fr/_next/static/chunks/0772ae331c3d42b541ad5c1e01cd9cfefbd0bab4.db4c39adb421f7a92299.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `select`
   
   
   
@@ -1727,7 +1727,7 @@ Instances: 6
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/_next/static/css/8a0fd03bf391385e7f4b.css](https://covid-19.sante.gouv.fr/_next/static/css/8a0fd03bf391385e7f4b.css)
+* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/main-021ccc3ef87e5ad52e26.js](https://covid-19.sante.gouv.fr/_next/static/chunks/main-021ccc3ef87e5ad52e26.js)
   
   
   * Method: `GET`
@@ -1738,7 +1738,7 @@ Instances: 6
   
   
   
-* URL: [https://covid-19.sante.gouv.fr/_next/static/chunks/main-021ccc3ef87e5ad52e26.js](https://covid-19.sante.gouv.fr/_next/static/chunks/main-021ccc3ef87e5ad52e26.js)
+* URL: [https://covid-19.sante.gouv.fr/_next/static/css/3cb66964985f81ed5967.css](https://covid-19.sante.gouv.fr/_next/static/css/3cb66964985f81ed5967.css)
   
   
   * Method: `GET`

@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 15:20:31
+Generated on Mon, 22 Mar 2021 08:28:29
 
 
 ## Summary of Alerts
@@ -25,10 +25,10 @@ Generated on Wed, 17 Mar 2021 15:20:31
 | Server Leaks Version Information via "Server" HTTP Response Header Field | Low | 6 | 
 | X-Content-Type-Options Header Missing | Low | 6 | 
 | Base64 Disclosure | Informational | 1 | 
-| Information Disclosure - Suspicious Comments | Informational | 1 | 
+| Information Disclosure - Suspicious Comments | Informational | 2 | 
 | Modern Web Application | Informational | 4 | 
 | Storable and Cacheable Content | Informational | 6 | 
-| Timestamp Disclosure - Unix | Informational | 2 | 
+| Timestamp Disclosure - Unix | Informational | 58 | 
 
 ## Alert Detail
 
@@ -48,7 +48,7 @@ Generated on Wed, 17 Mar 2021 15:20:31
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.4f8d6668.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.4f8d6668.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
   
   
   * Method: `GET`
@@ -89,14 +89,6 @@ Instances: 1
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/sitemap.xml](https://tumeplay.fabrique.social.gouv.fr/sitemap.xml)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
 * URL: [https://tumeplay.fabrique.social.gouv.fr/](https://tumeplay.fabrique.social.gouv.fr/)
   
   
@@ -105,7 +97,7 @@ Instances: 1
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr](https://tumeplay.fabrique.social.gouv.fr)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
   
   
   * Method: `GET`
@@ -113,7 +105,15 @@ Instances: 1
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/sitemap.xml](https://tumeplay.fabrique.social.gouv.fr/sitemap.xml)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr](https://tumeplay.fabrique.social.gouv.fr)
   
   
   * Method: `GET`
@@ -239,7 +239,7 @@ Instances: 4
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
   
   
   * Method: `GET`
@@ -247,7 +247,7 @@ Instances: 4
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -390,6 +390,17 @@ Instances: 5
   
   
   
+* URL: [https://tumeplay.fabrique.social.gouv.fr/sitemap.xml](https://tumeplay.fabrique.social.gouv.fr/sitemap.xml)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `nginx/1.17.8`
+  
+  
+  
+  
 * URL: [https://tumeplay.fabrique.social.gouv.fr/manifest.json](https://tumeplay.fabrique.social.gouv.fr/manifest.json)
   
   
@@ -401,7 +412,7 @@ Instances: 5
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -435,17 +446,6 @@ Instances: 5
   
   
 * URL: [https://tumeplay.fabrique.social.gouv.fr/](https://tumeplay.fabrique.social.gouv.fr/)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `nginx/1.17.8`
-  
-  
-  
-  
-* URL: [https://tumeplay.fabrique.social.gouv.fr/sitemap.xml](https://tumeplay.fabrique.social.gouv.fr/sitemap.xml)
   
   
   * Method: `GET`
@@ -489,6 +489,17 @@ Instances: 6
   
   
   
+* URL: [https://tumeplay.fabrique.social.gouv.fr/](https://tumeplay.fabrique.social.gouv.fr/)
+  
+  
+  * Method: `GET`
+  
+  
+  * Parameter: `X-Content-Type-Options`
+  
+  
+  
+  
 * URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
   
   
@@ -501,17 +512,6 @@ Instances: 6
   
   
 * URL: [https://tumeplay.fabrique.social.gouv.fr/manifest.json](https://tumeplay.fabrique.social.gouv.fr/manifest.json)
-  
-  
-  * Method: `GET`
-  
-  
-  * Parameter: `X-Content-Type-Options`
-  
-  
-  
-  
-* URL: [https://tumeplay.fabrique.social.gouv.fr/](https://tumeplay.fabrique.social.gouv.fr/)
   
   
   * Method: `GET`
@@ -544,7 +544,7 @@ Instances: 6
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -589,7 +589,7 @@ Instances: 6
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -633,7 +633,18 @@ Instances: 1
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `bug`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -644,13 +655,13 @@ Instances: 1
   
   
   
-Instances: 1
+Instances: 2
   
 ### Solution
 <p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
   
 ### Other information
-<p>The following pattern was used: \bTODO\b and was detected in the element starting with: "(this.webpackJsonptumeplay=this.webpackJsonptumeplay||[]).push([[0],[,,,function(e,t,a){"use strict";var n={appTitleFont:"Carter", see evidence field for the suspicious comment/snippet.</p>
+<p>The following pattern was used: \bBUG\b and was detected in the element starting with: "(this.webpackJsonptumeplay=this.webpackJsonptumeplay||[]).push([[2],[function(e,t,n){"use strict";e.exports=n(320)},function(e,t", see evidence field for the suspicious comment/snippet.</p>
   
 ### Reference
 * 
@@ -688,17 +699,6 @@ Instances: 1
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/](https://tumeplay.fabrique.social.gouv.fr/)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `<script type="text/javascript">var _paq=window._paq||[];_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var e="https://matomo.fabrique.social.gouv.fr/";_paq.push(["setTrackerUrl",e+"piwik.php"]),_paq.push(["setSiteId","21"]);var a=document,t=a.createElement("script"),p=a.getElementsByTagName("script")[0];t.type="text/javascript",t.async=!0,t.defer=!0,t.src=e+"piwik.js",p.parentNode.insertBefore(t,p)}()</script>`
-  
-  
-  
-  
 * URL: [https://tumeplay.fabrique.social.gouv.fr](https://tumeplay.fabrique.social.gouv.fr)
   
   
@@ -711,6 +711,17 @@ Instances: 1
   
   
 * URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `<script type="text/javascript">var _paq=window._paq||[];_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var e="https://matomo.fabrique.social.gouv.fr/";_paq.push(["setTrackerUrl",e+"piwik.php"]),_paq.push(["setSiteId","21"]);var a=document,t=a.createElement("script"),p=a.getElementsByTagName("script")[0];t.type="text/javascript",t.async=!0,t.defer=!0,t.src=e+"piwik.js",p.parentNode.insertBefore(t,p)}()</script>`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/](https://tumeplay.fabrique.social.gouv.fr/)
   
   
   * Method: `GET`
@@ -758,7 +769,15 @@ Instances: 4
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/sitemap.xml](https://tumeplay.fabrique.social.gouv.fr/sitemap.xml)
   
   
   * Method: `GET`
@@ -774,7 +793,7 @@ Instances: 4
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/robots.txt](https://tumeplay.fabrique.social.gouv.fr/robots.txt)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -783,14 +802,6 @@ Instances: 4
   
   
 * URL: [https://tumeplay.fabrique.social.gouv.fr/manifest.json](https://tumeplay.fabrique.social.gouv.fr/manifest.json)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
-* URL: [https://tumeplay.fabrique.social.gouv.fr/sitemap.xml](https://tumeplay.fabrique.social.gouv.fr/sitemap.xml)
   
   
   * Method: `GET`
@@ -833,18 +844,84 @@ Instances: 6
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
   
   
   * Method: `GET`
   
   
-  * Evidence: `00000000`
+  * Evidence: `13554175`
   
   
   
   
-* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.1732b2ae.chunk.js)
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `2096890111`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `2070474495`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `16744447`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `314245179`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `1221709055`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `793726975`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/main.92aab626.chunk.js)
   
   
   * Method: `GET`
@@ -855,13 +932,145 @@ Instances: 6
   
   
   
-Instances: 2
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `1433087999`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `20037508`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `1182971135`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `2147483647`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `16423679`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `15496570`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `1018393087`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `263240420`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `421097727`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `1604231423`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `2147418367`
+  
+  
+  
+  
+* URL: [https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js](https://tumeplay.fabrique.social.gouv.fr/static/js/2.5471e281.chunk.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `579543807`
+  
+  
+  
+  
+Instances: 58
   
 ### Solution
 <p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>
   
 ### Other information
-<p>00000000, which evaluates to: 1970-01-01 00:00:00</p>
+<p>13554175, which evaluates to: 1970-06-06 21:02:55</p>
   
 ### Reference
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage

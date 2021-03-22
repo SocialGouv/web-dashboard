@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 14:55:58
+Generated on Mon, 22 Mar 2021 07:06:00
 
 
 ## Summary of Alerts
@@ -653,6 +653,14 @@ Instances: 9
   
   
   
+* URL: [https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-8a5820709f78ec27a8cc.js](https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-8a5820709f78ec27a8cc.js)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
 * URL: [https://carnets.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js](https://carnets.fabrique.social.gouv.fr/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js)
   
   
@@ -694,14 +702,6 @@ Instances: 9
   
   
 * URL: [https://carnets.fabrique.social.gouv.fr/](https://carnets.fabrique.social.gouv.fr/)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
-* URL: [https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_error-b4c8843821f69eb8eef3.js](https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_error-b4c8843821f69eb8eef3.js)
   
   
   * Method: `GET`
@@ -1123,17 +1123,6 @@ Instances: 11
   
   
   
-* URL: [https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_error-b4c8843821f69eb8eef3.js](https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_error-b4c8843821f69eb8eef3.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Parameter: `X-Content-Type-Options`
-  
-  
-  
-  
 * URL: [https://carnets.fabrique.social.gouv.fr/_next/static/css/b8214223318f2fb72dd6.css](https://carnets.fabrique.social.gouv.fr/_next/static/css/b8214223318f2fb72dd6.css)
   
   
@@ -1157,6 +1146,17 @@ Instances: 11
   
   
 * URL: [https://carnets.fabrique.social.gouv.fr/_next/static/chunks/commons.cc959aa391637e5ccf4b.js](https://carnets.fabrique.social.gouv.fr/_next/static/chunks/commons.cc959aa391637e5ccf4b.js)
+  
+  
+  * Method: `GET`
+  
+  
+  * Parameter: `X-Content-Type-Options`
+  
+  
+  
+  
+* URL: [https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-8a5820709f78ec27a8cc.js](https://carnets.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-8a5820709f78ec27a8cc.js)
   
   
   * Method: `GET`
@@ -1256,17 +1256,6 @@ Instances: 11
   
   
   
-* URL: [https://carnets.fabrique.social.gouv.fr/api/auth0/login](https://carnets.fabrique.social.gouv.fr/api/auth0/login)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `eyJub25jZSI6IjliYmU0YTQwMDQ3YTlmMTUxMTRhNjQ0MjE5YmZiYTIxIn0`
-  
-  
-  
-  
 * URL: [https://carnets.fabrique.social.gouv.fr](https://carnets.fabrique.social.gouv.fr)
   
   
@@ -1300,17 +1289,6 @@ Instances: 11
   
   
   
-* URL: [https://carnets.fabrique.social.gouv.fr/stats](https://carnets.fabrique.social.gouv.fr/stats)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `aa75-LX8Rca3r87msJqLc0lsrnnkGFkg`
-  
-  
-  
-  
 * URL: [https://carnets.fabrique.social.gouv.fr/team/didoc](https://carnets.fabrique.social.gouv.fr/team/didoc)
   
   
@@ -1322,13 +1300,24 @@ Instances: 11
   
   
   
-* URL: [https://carnets.fabrique.social.gouv.fr/team/diversite](https://carnets.fabrique.social.gouv.fr/team/diversite)
+* URL: [https://carnets.fabrique.social.gouv.fr/api/auth0/login](https://carnets.fabrique.social.gouv.fr/api/auth0/login)
   
   
   * Method: `GET`
   
   
-  * Evidence: `84bb-+HvBywrpR/VgrZqc10CD22y520A`
+  * Evidence: `eyJub25jZSI6ImMxOWY3Njk2MjZiNjZiM2JmNjU4MzlmMTg4NmY5ZmI0In0`
+  
+  
+  
+  
+* URL: [https://carnets.fabrique.social.gouv.fr/stats](https://carnets.fabrique.social.gouv.fr/stats)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `aa6b-H5uLx/5STOf1QOWHnZbVy0ekA0E`
   
   
   
@@ -1351,6 +1340,17 @@ Instances: 11
   
   
   * Evidence: `com/SocialGouv/carnets/tree/2f7c23024eeb820ed67aef00bc40e7955111cbf4`
+  
+  
+  
+  
+* URL: [https://carnets.fabrique.social.gouv.fr/team/diversite](https://carnets.fabrique.social.gouv.fr/team/diversite)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `84bc-NJvAWKLaVxydAdXDiWlX9cuTBmA`
   
   
   
@@ -1383,7 +1383,7 @@ Instances: 11
 <p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>
   
 ### Other information
-<p>{"nonce":"9bbe4a40047a9f15114a644219bfba21"}</p>
+<p>r��J�"jQ����j�޶�������}6���m\x001ew��y�4m�4{�y�]uq��</p>
   
 ### Reference
 * http://projects.webappsec.org/w/page/13246936/Information%20Leakage

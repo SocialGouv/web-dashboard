@@ -1,7 +1,7 @@
 
 # ZAP Scanning Report
 
-Generated on Wed, 17 Mar 2021 15:13:34
+Generated on Mon, 22 Mar 2021 08:05:35
 
 
 ## Summary of Alerts
@@ -352,14 +352,6 @@ Instances: 3
   
   
   
-* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-fd3451aaa3d32a08d362.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/pages/_app-fd3451aaa3d32a08d362.js)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
 * URL: [https://ozensemble.fabrique.social.gouv.fr](https://ozensemble.fabrique.social.gouv.fr)
   
   
@@ -409,6 +401,14 @@ Instances: 3
   
   
 * URL: [https://ozensemble.fabrique.social.gouv.fr/sitemap.xml](https://ozensemble.fabrique.social.gouv.fr/sitemap.xml)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
+* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/b5a1a11cf481448d726e6b3c8fc6e403c3764034.13e8fba5956cfaf561a3.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/b5a1a11cf481448d726e6b3c8fc6e403c3764034.13e8fba5956cfaf561a3.js)
   
   
   * Method: `GET`
@@ -606,17 +606,6 @@ Instances: 9
   
   
   
-* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/37175837.4d62413f4da81be1e932.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/37175837.4d62413f4da81be1e932.js)
-  
-  
-  * Method: `GET`
-  
-  
-  * Evidence: `nginx/1.17.8`
-  
-  
-  
-  
 * URL: [https://ozensemble.fabrique.social.gouv.fr/cgu](https://ozensemble.fabrique.social.gouv.fr/cgu)
   
   
@@ -706,6 +695,17 @@ Instances: 9
   
   
 * URL: [https://ozensemble.fabrique.social.gouv.fr/](https://ozensemble.fabrique.social.gouv.fr/)
+  
+  
+  * Method: `GET`
+  
+  
+  * Evidence: `nginx/1.17.8`
+  
+  
+  
+  
+* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.b5926fc596cec3d50776.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.b5926fc596cec3d50776.js)
   
   
   * Method: `GET`
@@ -848,7 +848,7 @@ Instances: 11
   
   
   
-* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/37175837.4d62413f4da81be1e932.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/37175837.4d62413f4da81be1e932.js)
+* URL: [https://ozensemble.fabrique.social.gouv.fr/robots.txt](https://ozensemble.fabrique.social.gouv.fr/robots.txt)
   
   
   * Method: `GET`
@@ -859,7 +859,7 @@ Instances: 11
   
   
   
-* URL: [https://ozensemble.fabrique.social.gouv.fr/robots.txt](https://ozensemble.fabrique.social.gouv.fr/robots.txt)
+* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.b5926fc596cec3d50776.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.b5926fc596cec3d50776.js)
   
   
   * Method: `GET`
@@ -1102,13 +1102,13 @@ Instances: 5
   
   
   
-* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/pages/index-a67d4d0c03f48ca1bfbc.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/pages/index-a67d4d0c03f48ca1bfbc.js)
+* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/polyfills-4beebf4ac9054f0bf4e6.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/polyfills-4beebf4ac9054f0bf4e6.js)
   
   
   * Method: `GET`
   
   
-  * Evidence: `from`
+  * Evidence: `query`
   
   
   
@@ -1268,14 +1268,6 @@ Instances: 7
   
   
   
-* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/37175837.4d62413f4da81be1e932.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/37175837.4d62413f4da81be1e932.js)
-  
-  
-  * Method: `GET`
-  
-  
-  
-  
 * URL: [https://ozensemble.fabrique.social.gouv.fr/robots.txt](https://ozensemble.fabrique.social.gouv.fr/robots.txt)
   
   
@@ -1285,6 +1277,14 @@ Instances: 7
   
   
 * URL: [https://ozensemble.fabrique.social.gouv.fr/sitemap.xml](https://ozensemble.fabrique.social.gouv.fr/sitemap.xml)
+  
+  
+  * Method: `GET`
+  
+  
+  
+  
+* URL: [https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.b5926fc596cec3d50776.js](https://ozensemble.fabrique.social.gouv.fr/_next/static/chunks/framework.b5926fc596cec3d50776.js)
   
   
   * Method: `GET`
