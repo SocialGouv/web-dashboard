@@ -14,6 +14,7 @@ jobs:
       - name: Build
         run: |
           LATEST=$(find ./results/* -type d -prune | tail -n 1)
+          yarn
           node src/report $LATEST > ./www/src/report.json
           cp $LATEST/* ./www/public/report/
           cd www
