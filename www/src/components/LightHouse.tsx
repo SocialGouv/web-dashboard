@@ -88,7 +88,7 @@ export const LightHouse: React.FC<LightHouseProps> = ({ data }) => {
       {data.map((row: any, i: number) => {
         const order = ["accessibility", "performance", "seo", "best-practices"];
         return (
-          <React.Fragment>
+          <React.Fragment key={row.url}>
             <Row key={row.url + i}>
               {order.map((key: any, i: number) => {
                 const category = row.categories[key] as Category;
