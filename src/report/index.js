@@ -1,5 +1,7 @@
 const fs = require("fs");
 const path = require("path");
+const pick = require("lodash.pick");
+const omit = require("lodash.omit");
 
 const { getUrls, toHostname } = require("../utils");
 
@@ -20,11 +22,6 @@ const smallUrl = (url) =>
 const isSameUrl = (url1, url2) => smallUrl(url1) === smallUrl(url2);
 
 const isSameHost = (url1, url2) => toHostname(url1) === toHostname(url2);
-
-const removeKey = (obj, key) => {
-  const { [key]: arg, ...others } = obj;
-  return others;
-};
 
 const owaspCleanup = (result) => {
   return {
@@ -76,7 +73,7 @@ const exportData = async (resultsPath) => {
         http: allData.http
           .filter((result) => isSameUrl(currentUrl, result.url))
           .map((result) => ({
-            ...removeKey(result.result, "responseHeaders"),
+            ...omit(result.result, "responseHeaders"),
           })),
         ssl: allData.ssl
           .filter((result) => isSameUrl(currentUrl, result.url))
@@ -92,12 +89,12 @@ const exportData = async (resultsPath) => {
         lhr: allData.lhr
           .filter((result) => isSameUrl(currentUrl, result.url))
           .map(({ url, filename, result }) => {
-            const { requestedUrl, finalUrl, categories } = result;
+            const { requestedUrl, finalUrl, categories, audits } = result;
             // strip some data
             const newCategories = Object.keys(categories).reduce(
               (a, key) => ({
                 ...a,
-                [key]: removeKey(categories[key], "auditRefs"),
+                [key]: omit(categories[key], "auditRefs"),
               }),
               {}
             );
@@ -107,6 +104,7 @@ const exportData = async (resultsPath) => {
               requestedUrl,
               finalUrl,
               categories: newCategories,
+              audits: pick(audits, ["metrics", "diagnostics"]),
             };
           }),
         owasp: allData.owasp
