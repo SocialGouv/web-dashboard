@@ -1,5 +1,5 @@
 const trackers = require("./trackers");
-const { toHostname } = require("../utils");
+const { rootDomain, toHostname } = require("../utils");
 
 // expected response timeout in seconds
 const TIMEOUT = 120;
@@ -40,18 +40,6 @@ const isLegit = (url) => {
   }
   return false;
 };
-
-/**
- * get root domain of some url
- *
- * @param {string} url The full URL
- *
- * @returns {string} root domain name
- */
-const rootDomain = (url) =>
-  url
-    .replace(/(?:https?:\/\/)?(?:[^/])*?([^./]+\.[^./]+)(?:\/.*)?$/i, "$1")
-    .toLowerCase();
 
 /**
  * check if some urls share the same domain

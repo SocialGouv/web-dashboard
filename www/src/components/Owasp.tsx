@@ -33,16 +33,11 @@ const OwaspBadge = (row: any) => {
   );
 };
 
-type OwaspProps = { data: any };
+type OwaspProps = { data: any, url:string };
 
-export const Owasp: React.FC<OwaspProps> = ({ data }) => {
-  const alerts = data.flatMap((row: any) => {
-    return row && row.site.flatMap((site: any) => site.alerts);
-  });
+export const Owasp: React.FC<OwaspProps> = ({ data, url }) => {
+  const alerts = data && data.site && data.site.flatMap((site: any) => site.alerts)
   alerts.sort(orderBySeverity);
-  const url =
-    data.length &&
-    `/dnum-dashboard/report/${data[0].filename.replace(/\.json$/, ".html")}`;
   return (
     (alerts.length && (
       <Panel
@@ -54,7 +49,6 @@ export const Owasp: React.FC<OwaspProps> = ({ data }) => {
           <thead>
             <tr>
               <th>name</th>
-              <th className="text-center">count</th>
               <th className="text-center">risk/confidence</th>
             </tr>
           </thead>
@@ -63,7 +57,6 @@ export const Owasp: React.FC<OwaspProps> = ({ data }) => {
               return (
                 <tr key={alert.name + i}>
                   <td>{alert.name}</td>
-                  <td className="text-center">{alert.count}</td>
                   <td className="text-center">
                     <OwaspBadge {...alert} />
                   </td>

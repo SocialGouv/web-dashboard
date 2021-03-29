@@ -5,11 +5,11 @@ import { ExternalLink, Slash, Info, Search } from "react-feather";
 import { Link } from "react-router-dom";
 import Tooltip from "rc-tooltip";
 
-import { smallUrl } from "../utils";
-
 import { Grade } from "./Grade";
 
 import "rc-tooltip/assets/bootstrap.css";
+
+const stripUrl = (url: string) => url.replace(/^(https?:\/\/)?(www\.)?/, "")
 
 type DashboardProps = { report: any };
 
@@ -37,12 +37,12 @@ const getGradeCookies = (count: number) => {
   return count > 10
     ? "F"
     : count > 5
-    ? "E"
-    : count > 2
-    ? "C"
-    : count > 0
-    ? "B"
-    : "A";
+      ? "E"
+      : count > 2
+        ? "C"
+        : count > 0
+          ? "B"
+          : "A";
 };
 
 const getNucleiGrade = (events: any) => {
@@ -51,8 +51,8 @@ const getNucleiGrade = (events: any) => {
   ).length
     ? "F"
     : events.length
-    ? "B"
-    : "A";
+      ? "B"
+      : "A";
 };
 
 const getOwaspGrade = (owaspAlerts: any) => {
@@ -63,12 +63,12 @@ const getOwaspGrade = (owaspAlerts: any) => {
   return maxSeverity > 3
     ? "F"
     : maxSeverity > 2
-    ? "D"
-    : maxSeverity > 1
-    ? "C"
-    : maxSeverity > 0
-    ? "B"
-    : "A";
+      ? "D"
+      : maxSeverity > 1
+        ? "C"
+        : maxSeverity > 0
+          ? "B"
+          : "A";
 };
 
 type ColumnHeaderProps = {
@@ -91,6 +91,7 @@ const ColumnHeader: React.FC<ColumnHeaderProps> = ({ title, info }) => (
 );
 
 export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
+  //console.log('report', report)
   return (
     <div>
       <br />
@@ -145,12 +146,12 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
           </tr>
         </thead>
         <tbody>
-          {Object.keys(report).map((key) => {
+          {report.map((urlReport: any) => {
             // compute values
 
             // LightHouse
             const lhrCategories =
-              report[key].lhr.length && report[key].lhr[0].categories;
+              urlReport.lhr && urlReport.lhr.categories;
             const a11y =
               lhrCategories && (lhrCategories.accessibility.score as number);
             const webPerf =
@@ -159,49 +160,48 @@ export const Dashboard: React.FC<DashboardProps> = ({ report }) => {
 
             // SSL
             const ssl =
-              report[key].ssl.length &&
-              report[key].ssl[0].endpoints &&
-              report[key].ssl[0].endpoints.length &&
-              report[key].ssl[0].endpoints[0].grade;
+              urlReport.ssl &&
+              urlReport.ssl.endpoints &&
+              urlReport.ssl.endpoints.length &&
+              urlReport.ssl.endpoints[0].grade;
 
             // HTTP
-            const http = report[key].http.length && report[key].http[0].grade;
+            const http = urlReport.http && urlReport.http.grade;
 
             // OWASP
             const owaspAlerts =
-              (report[key].owasp.length &&
-                report[key].owasp[0].site.flatMap((site: any) =>
+              (urlReport.zap &&
+                urlReport.zap.site.flatMap((site: any) =>
                   site.alerts.filter((a: any) => a.riskcode !== "0")
                 )) ||
               [];
-            const owaspCount = report[key].owasp.length && owaspAlerts.length;
+            const owaspCount = urlReport.zap && owaspAlerts.length;
             const owaspGrade = getOwaspGrade(owaspAlerts);
 
             // TRACKERS
             const trackersCount =
-              (report[key].trackers &&
-                report[key].trackers.length &&
-                report[key].trackers[0].trackers.length) ||
+              (urlReport.thirdparties &&
+                urlReport.thirdparties.trackers && urlReport.thirdparties.trackers.length) ||
               0;
             const trackersGrade = getGradeTrackers(trackersCount);
 
             // COOKIES
             const cookiesCount =
-              (report[key].trackers &&
-                report[key].trackers.length &&
-                report[key].trackers[0].cookies.length) ||
+              (urlReport.thirdparties &&
+                urlReport.thirdparties.cookies &&
+                urlReport.thirdparties.cookies.length) ||
               0;
             const cookiesGrade = getGradeCookies(cookiesCount);
 
             // NUCLEI
-            const nucleiCount = report[key].nuclei.length;
-            const nucleiGrade = getNucleiGrade(report[key].nuclei);
+            const nucleiCount = urlReport.nuclei.length;
+            const nucleiGrade = getNucleiGrade(urlReport.nuclei);
 
             return (
-              <tr key={key}>
+              <tr key={urlReport.url}>
                 <td>
-                  <Link to={`/url/${key}`}>
-                    <Search size={16} /> {smallUrl(key)}
+                  <Link to={`/url/${encodeURIComponent(urlReport.url)}`}>
+                    <Search size={16} /> {stripUrl(urlReport.url)}
                   </Link>
                 </td>
                 <td className="text-center">

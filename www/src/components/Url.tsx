@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 
 import { Jumbotron } from "react-bootstrap";
 
-import { GeoIP } from "./GeoIP";
 import { HTTP } from "./HTTP";
 import { LightHouse } from "./LightHouse";
 import { Nuclei } from "./Nuclei";
@@ -21,8 +20,8 @@ interface ParamTypes {
 
 export const Url: React.FC<UrlDetailProps> = ({ report, ...props }) => {
   const params = useParams<ParamTypes>();
-  const url = params["0"];
-  const urlData = report[url] as any;
+  const url = window.decodeURIComponent(params["0"]);
+  const urlData = report.find((r: any) => r.url === url) as any;
   return (
     <div>
       <Jumbotron
@@ -34,7 +33,10 @@ export const Url: React.FC<UrlDetailProps> = ({ report, ...props }) => {
           </a>
         </h3>
       </Jumbotron>
-      <LightHouse data={urlData.lhr} />
+      <LightHouse
+        data={urlData.lhr}
+        url={`/dnum-dashboard/report/${window.btoa(url)}/lhr.html`}
+      />
       <br />
       <SSL data={urlData.ssl} />
       <br />
@@ -42,11 +44,12 @@ export const Url: React.FC<UrlDetailProps> = ({ report, ...props }) => {
       <br />
       <Nuclei data={urlData.nuclei} />
       <br />
-      <Trackers data={urlData.trackers} />
+      <Trackers data={urlData.thirdparties} />
       <br />
-      <GeoIP data={urlData.geoip} />
-      <br />
-      <Owasp data={urlData.owasp} />
+      <Owasp
+        data={urlData.zap}
+        url={`/dnum-dashboard/report/${window.btoa(url)}/zap.html`}
+      />
     </div>
   );
 };

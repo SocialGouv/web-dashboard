@@ -1,19 +1,4 @@
-const { rootDomain, belongsToSameDomain } = require("./analyze");
-
-describe("rootDomain", () => {
-  const tests = [
-    ["https://www.a.com/hello", "a.com"],
-    ["https://xxx.www.a.com/hello", "a.com"],
-    ["https://xxx.www.a.com", "a.com"],
-    ["xxx.www.a.com", "a.com"],
-    ["xxx.www.a.com/blabla", "a.com"],
-    ["a.com", "a.com"],
-    ["https://www.some.domain/assets/img/logo.png", "some.domain"],
-  ];
-  tests.forEach(([url, root]) => {
-    test(`${url} = ${root}`, () => expect(rootDomain(url)).toEqual(root));
-  });
-});
+const { belongsToSameDomain } = require("./analyze");
 
 describe("belongsToSameDomain", () => {
   const isValid = [

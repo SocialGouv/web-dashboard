@@ -42,4 +42,16 @@ const getUrls = () =>
  */
 const uniqify = (input) => Array.from(new Set(input));
 
-module.exports = { toHostname, getUrls, uniqify };
+/**
+ * get root domain of some url
+ *
+ * @param {string} url The full URL
+ *
+ * @returns {string} root domain name
+ */
+const rootDomain = (url) =>
+  url
+    .replace(/(?:https?:\/\/)?(?:[^/])*?([^./]+\.[^./]+)(?:\/.*)?$/i, "$1")
+    .toLowerCase();
+
+module.exports = { toHostname, getUrls, uniqify, rootDomain };

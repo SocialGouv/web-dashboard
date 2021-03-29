@@ -13,14 +13,13 @@ import { Url } from "./components/Url";
 import { Intro } from "./components/Intro";
 
 const App = () => {
-  const urls = Object.keys(report);
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Topbar />
         <Container fluid>
           <Row>
-            <Sidebar urls={urls} />
+            <Sidebar report={report} />
             <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
               <Switch>
                 <Route path="/url/*">

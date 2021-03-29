@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Row, Col, Alert } from "react-bootstrap";
+import { Row, Col, Alert, Table } from "react-bootstrap";
 
 import { Panel } from "./Panel";
 import { Grade } from "./Grade";
@@ -9,48 +9,58 @@ type SSLProps = { data: any };
 
 export const SSL: React.FC<SSLProps> = ({ data }) => {
   const url =
-    (data.length &&
-      data[0].endpoints &&
-      `https://www.ssllabs.com/ssltest/analyze.html?d=${data[0].host}`) ||
+    (data && data.endpoints &&
+      `https://www.ssllabs.com/ssltest/analyze.html?d=${data.host}`) ||
     null;
   return (
     url && (
       <Panel title="SSL" info="Informations collectées via SSLlabs" url={url}>
-        {data.map((row: any, i: number) => {
-          return (
-            <React.Fragment key={row.url + i}>
-              <Row>
-                <Col>
-                  {row.endpoints.map((endpoint: any, i: number) => {
-                    return (
-                      <div key={endpoint.host + i}>
-                        {endpoint.host}
-                        <h6>
-                          {(endpoint.statusMessage === "Ready" && (
-                            <div>
-                              <Grade grade={endpoint.grade} />
-                              <br />
-                              <br />
-                              {endpoint.hasWarnings && (
-                                <div>Certificate has WARNINGS</div>
-                              )}
-                              <br />
-                              IP: {endpoint.ipAddress}
-                            </div>
-                          )) || (
-                            <Alert variant="danger">
-                              {endpoint.statusMessage}
-                            </Alert>
-                          )}
-                        </h6>
+        <Row>
+          <Col>
+           <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th className="bg-dark text-white" colSpan={4}>
+              SSL endpoints
+            </th>
+          </tr>
+          <tr>
+            <th>IP</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            {data.endpoints.map((endpoint: any, i: number) => {
+              return (
+                <tr key={endpoint.ipAddress}>
+                 <td> {endpoint.ipAddress}</td>
+                 <td>
+                  
+                    {(endpoint.statusMessage === "Ready" && (
+                      <div>
+                        <Grade grade={endpoint.grade} />
+                        <br />
+                        <br />
+                        {endpoint.hasWarnings && (
+                          <div>Certificate has WARNINGS</div>
+                        )}
                       </div>
-                    );
-                  })}
-                </Col>
-              </Row>
-            </React.Fragment>
-          );
-        })}
+                    )) || (
+                      <Alert variant="danger">
+                        {endpoint.statusMessage}
+                      </Alert>
+                    )}
+                  
+                </td>
+                </tr>
+              );
+            })}
+            </tbody>
+            </Table>
+          </Col>
+        </Row>
+    
       </Panel>
     )
   );

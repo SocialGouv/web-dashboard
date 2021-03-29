@@ -4,6 +4,7 @@ const pick = require("lodash.pick");
 const omit = require("lodash.omit");
 
 const { getUrls, toHostname } = require("../utils");
+const { copyWithin } = require("../thirdparties/trackers");
 
 const requireJson = (resultsPath, filename) => {
   try {
@@ -62,7 +63,7 @@ const generateReport = () => {
     }
     const latestFilesPath = path.join(urlPath, lastScan);
     const latestFiles = fs.readdirSync(latestFilesPath);
-    return {
+    const urlData = {
       url,
       http: requireJson(latestFilesPath, "http.json"),
       ssl: requireJson(latestFilesPath, "ssl.json"),
@@ -71,6 +72,18 @@ const generateReport = () => {
       nuclei: cleanups.nuclei(requireJson(latestFilesPath, "nuclei.json")),
       lhr: cleanups.lhr(requireJson(latestFilesPath, "lhr.json")),
     };
+
+    // copy lhr and zap html reports
+    const publicReportsUrlPath = path.join("www", "public", "report", urlb64);
+    fs.mkdirSync(publicReportsUrlPath, { recursive: true });
+    fs.createReadStream(path.join(latestFilesPath, "lhr.html")).pipe(
+      fs.createWriteStream(path.join(publicReportsUrlPath, "lhr.html"))
+    );
+    fs.createReadStream(path.join(latestFilesPath, "zap.html")).pipe(
+      fs.createWriteStream(path.join(publicReportsUrlPath, "zap.html"))
+    );
+
+    return urlData;
   });
   return urls;
 };

@@ -5,7 +5,7 @@ const puppeteer = require("puppeteer");
 const pAll = require("p-all");
 
 const { analyzeUrl } = require("./analyze");
-const { toHostname, uniqify } = require("../utils");
+const { rootDomain, toHostname, uniqify } = require("../utils");
 const { getGeoIP } = require("./geoip");
 
 /**
@@ -66,7 +66,7 @@ const scan = (url) =>
             ip,
             // add geolite2 data
             geoip: await getGeoIP(ip),
-            // todo: add ipservers list
+            // todo: add hosting info
           };
         }),
         { concurrency: 1 }

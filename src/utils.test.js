@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { toHostname, getUrls } = require("./utils");
+const { toHostname, getUrls, rootDomain } = require("./utils");
 
 jest.mock("fs");
 
@@ -33,5 +33,20 @@ url3
 `);
 
     expect(getUrls()).toEqual(["url1", "url2", "url3"]);
+  });
+});
+
+describe("rootDomain", () => {
+  const tests = [
+    ["https://www.a.com/hello", "a.com"],
+    ["https://xxx.www.a.com/hello", "a.com"],
+    ["https://xxx.www.a.com", "a.com"],
+    ["xxx.www.a.com", "a.com"],
+    ["xxx.www.a.com/blabla", "a.com"],
+    ["a.com", "a.com"],
+    ["https://www.some.domain/assets/img/logo.png", "some.domain"],
+  ];
+  tests.forEach(([url, root]) => {
+    test(`${url} = ${root}`, () => expect(rootDomain(url)).toEqual(root));
   });
 });

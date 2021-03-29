@@ -35,7 +35,6 @@ export const Intro: React.FC = () => {
         <Link to="/dashboard">
           <Button
             variant="dark"
-            href="https://developers.google.com/web/tools/lighthouse"
           >
             Accéder au tableau de bord
           </Button>
